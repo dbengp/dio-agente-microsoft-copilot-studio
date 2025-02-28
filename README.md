@@ -1,60 +1,58 @@
 # dio-agente-microsoft-copilot-studio
-Resumo dos passos para se criar um agente do Copiloto no Microsoft Copilot Studio.
-Para criar um agente no Microsoft Copilot Studio, siga estes passos detalhados:
+Resumo dos passos para se criar um agente do Copiloto no Microsoft Copilot Studio para criar um Agente de Seguros Personalizado com Microsoft Copilot Studio
+Com o Microsoft Copilot Studio, você pode criar um agente de seguros personalizado que interage com seus clientes, responde a perguntas e realiza ações específicas, tudo integrado ao Microsoft 365 Copilot. Veja como:
 
-1. Criar um Novo Agente:
+1. Criar um Agente:
+	- Acesse o Copilot Studio: Navegue até o Microsoft Copilot Studio e faça login com sua conta Microsoft 365.
+	- Crie um novo copiloto: Clique em "Novo copiloto" e siga as instruções para configurar seu agente. Dê um nome relevante, como "Agente de Seguros [Nome da sua empresa]".
+	- Defina o idioma: Escolha o idioma principal do seu agente, neste caso, português.
+	
+2. Criar Tópicos Relacionados ao Domínio de Seguros:
+	- Identifique os principais tópicos: Pense nas perguntas e tarefas mais comuns que seus clientes realizam, como:
+	- Cotação de seguros (auto, residencial, vida)
+	- Abertura de sinistros
+ - Informações sobre coberturas e apólices
+ - Pagamento de seguros
+	- Dúvidas sobre planos específicos
+	- Crie tópicos no Copilot Studio: Para cada tópico, crie um novo tópico no Copilot Studio.
+	- Defina frases de gatilho: Adicione frases que os clientes podem usar para iniciar o tópico (ex: "quero cotar um seguro auto", "como faço para abrir um sinistro?").
+	- Crie o fluxo de conversa: Use o editor visual para criar o fluxo de conversa, incluindo perguntas, respostas e ações.
+	
+3. Criar Ações de Conversa Relacionadas ao Tópico:
+ - Exemplo: Cotação de Seguro Auto:
+	- No tópico "Cotação de Seguro Auto", adicione uma ação para coletar informações do cliente:
+	- Marca e modelo do veículo
+	- Ano de fabricação
+	- CEP de residência
+	- Dados do condutor
+	- Utilize conectores para integrar com sistemas externos:
+	- Conecte-se a APIs de seguradoras para obter cotações em tempo real.
+	- Armazene os dados coletados em um banco de dados.
+	- Apresente as cotações ao cliente: Mostre as opções de seguro com detalhes de cobertura e preço.
 
-- Acesse o Microsoft Copilot Studio:
-  * Vá para o site do Microsoft Copilot Studio e faça login com sua conta Microsoft.
-  * Na tela inicial, você encontrará a opção para criar um novo copiloto.
-- Tela de Criação Unificada:
-  * O Microsoft Copilot Studio oferece uma tela de criação unificada, que simplifica o processo de criação de agentes.
-  * Nesta tela, você poderá definir o nome do seu agente, escolher o idioma e selecionar o ambiente em que ele será executado.
-  * Dê um nome claro e descritivo ao seu agente, como "Agente de Suporte ao Workshop Online".
+4. Refinar a Ação de Conversa com GenAI:
+	- Melhorar a qualidade das respostas:
+	- Utilize a geração de linguagem natural (NLG) para criar respostas mais personalizadas e amigáveis.
+	- Integre modelos de linguagem grandes (LLMs) para responder a perguntas complexas e fornecer informações detalhadas.
+	- Use a análise de sentimento para adaptar o tom da conversa às emoções do cliente.
+	- Exemplo:
+	- Em vez de simplesmente mostrar uma tabela de cotações, o agente pode gerar um resumo personalizado, destacando os benefícios de cada opção e respondendo a perguntas adicionais do cliente.
+	- O copilot pode ser programado para entender quando o cliente esta nervoso, ou chateado, e mudar o tom da conversa para um tom mais calmo e atencioso.
+	- Diminuir a qualidade das respostas:
+	- Em casos onde o cliente precisa de informações mais objetivas, ou de respostas mais diretas, pode-se configurar o copilot para usar uma linguagem mais direta.
+	- Pode ser configurado para o copilot fornecer respostas padrão, para perguntas muito especificas, onde a GenAI pode gerar respostas incorretas, ou com informações desatualizadas.
 
-2. Criar um Tópico Relacionado ao Workshop Online:
+5. Testar o Agente:
+- Use o painel de teste: O Copilot Studio possui um painel de teste integrado onde você pode simular conversas com seu agente.
+- Teste todos os tópicos e ações: Verifique se o agente responde corretamente às perguntas e executa as ações desejadas.
+- Peça feedback: Convide colegas ou clientes para testar o agente e fornecer feedback sobre a experiência.
 
-- Crie um Novo Tópico:
-  * Dentro do seu agente, navegue até a seção de tópicos e clique em "Novo tópico".
-  * Dê um nome ao tópico que reflita o tema do workshop, como "Informações do Workshop" ou "Dúvidas sobre o Workshop".
-- Adicione Conteúdo ao Tópico:
-  * Utilize o editor de tópicos para adicionar o conteúdo relevante:
-  * Frases de gatilho: Defina as frases que os usuários podem usar para acionar este tópico, como "Onde é o workshop?", "Qual o horário do workshop?" ou "Conteúdo do workshop".
-  * Respostas em rich text: Use o editor de rich text para formatar suas respostas com títulos, listas, links e imagens.
-  * Variáveis: Crie variáveis para armazenar informações, como a data, o horário e o local do workshop, e use-as nas suas respostas.
-  * Ações: Adicione ações para executar tarefas, como enviar um e-mail com o material do workshop ou agendar uma reunião.
+6. Publicar o Agente em um Site de Demonstração:
+	- No Copilot Studio, clique em "Publicar" e siga as instruções para publicar seu agente em um site de demonstração.
+	- Compartilhe o link: Compartilhe o link do site de demonstração com seus clientes ou colegas para que eles possam interagir com o agente.
+	- Integre com o Microsoft 365 Copilot: Após a aprovação do administrador do locatário, a ação poderá ser adicionada às experiências do Microsoft 365 Business Chat.
 
-3. Usar o Recurso Copiloto para Criar um Tópico com IA:
-
-- Copiloto na Criação de Tópicos:
-  * O Microsoft Copilot Studio integra recursos de IA que podem ajudar na criação de tópicos.
-  * Utilize o recurso "Copiloto" para gerar sugestões de tópicos e conteúdo com base em palavras-chave ou frases.
-  * Forneça informações sobre o Workshop, e peça para o Copilot gerar um tópico com as perguntas mais frequentes.
-- Personalize o Tópico Gerado:
-  * Revise e edite o tópico gerado pelo Copiloto para garantir que ele atenda às suas necessidades.
-  * Adicione ou remova informações, ajuste a linguagem e formate as respostas conforme necessário.
-    
-4. Testar o Agente:
-
-- Painel de Teste:
-  * O Microsoft Copilot Studio oferece um painel de teste integrado.
-  * Utilize o painel de teste para simular conversas com o seu agente.
-  * Teste diferentes frases de gatilho e cenários para verificar se o agente responde corretamente.
-- Depuração:
-  * Use as ferramentas de depuração para identificar e corrigir erros no fluxo de conversa do agente.
-  * Verifique se as variáveis estão sendo preenchidas corretamente e se as ações estão sendo executadas conforme esperado.
-
-5. Publicar o Agente em um Site de Demonstração:
-
-- Publicação:
-  * Após testar e validar o agente, você pode publicá-lo em um site de demonstração.
-  * O Microsoft Copilot Studio oferece opções para publicar o agente em diferentes canais, incluindo sites, aplicativos e redes sociais.
-  * Escolha a opção de publicação em um site de demonstração para compartilhar o agente com os participantes do workshop.
-- Integração:
-  * Se necessário, você pode integrar o agente a um site ou aplicativo existente.
-  * O Microsoft Copilot Studio fornece documentação e ferramentas para facilitar a integração.
-
-- Para treinamento e aprendizado mais consistentes acesse: <https://learn.microsoft.com/pt-br/training/browse/?terms=copilot%20studio&products=ms-copilot>
-- Considere sempre explore a documentação do Microsoft Copilot Studio pois no contexto da IA atual recursos e funcionalidades disponíveis estão em constante mudança.
-- Participe de workshops e treinamentos online para aprimorar suas habilidades na criação de agentes: <https://developer.microsoft.com/pt-br/reactor/home/index/>
-
+7. Considerações de Compliance e LGPD:
+	- Garanta que seu agente esteja em conformidade com as leis de proteção de dados e políticas de segurança da sua empresa.
+	- Atualização contínua: Mantenha seu agente atualizado com as últimas informações e funcionalidades.
+	- Feedback do cliente: Utilize o feedback dos clientes para melhorar continuamente a experiência do seu agente.
