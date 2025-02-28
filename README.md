@@ -11,15 +11,15 @@ Com o Microsoft Copilot Studio, você pode criar um agente de seguros personaliz
 	- Identifique os principais tópicos: Pense nas perguntas e tarefas mais comuns que seus clientes realizam, como:
 	- Cotação de seguros (auto, residencial, vida)
 	- Abertura de sinistros
- - Informações sobre coberturas e apólices
- - Pagamento de seguros
+ 	- Informações sobre coberturas e apólices
+ 	- Pagamento de seguros
 	- Dúvidas sobre planos específicos
 	- Crie tópicos no Copilot Studio: Para cada tópico, crie um novo tópico no Copilot Studio.
 	- Defina frases de gatilho: Adicione frases que os clientes podem usar para iniciar o tópico (ex: "quero cotar um seguro auto", "como faço para abrir um sinistro?").
 	- Crie o fluxo de conversa: Use o editor visual para criar o fluxo de conversa, incluindo perguntas, respostas e ações.
 	
 3. Criar Ações de Conversa Relacionadas ao Tópico:
- - Exemplo: Cotação de Seguro Auto:
+ 	- Exemplo: Cotação de Seguro Auto:
 	- No tópico "Cotação de Seguro Auto", adicione uma ação para coletar informações do cliente:
 	- Marca e modelo do veículo
 	- Ano de fabricação
@@ -43,9 +43,9 @@ Com o Microsoft Copilot Studio, você pode criar um agente de seguros personaliz
 	- Pode ser configurado para o copilot fornecer respostas padrão, para perguntas muito especificas, onde a GenAI pode gerar respostas incorretas, ou com informações desatualizadas.
 
 5. Testar o Agente:
-- Use o painel de teste: O Copilot Studio possui um painel de teste integrado onde você pode simular conversas com seu agente.
-- Teste todos os tópicos e ações: Verifique se o agente responde corretamente às perguntas e executa as ações desejadas.
-- Peça feedback: Convide colegas ou clientes para testar o agente e fornecer feedback sobre a experiência.
+	- Use o painel de teste: O Copilot Studio possui um painel de teste integrado onde você pode simular conversas com seu agente.
+	- Teste todos os tópicos e ações: Verifique se o agente responde corretamente às perguntas e executa as ações desejadas.
+	- Peça feedback: Convide colegas ou clientes para testar o agente e fornecer feedback sobre a experiência.
 
 6. Publicar o Agente em um Site de Demonstração:
 	- No Copilot Studio, clique em "Publicar" e siga as instruções para publicar seu agente em um site de demonstração.
